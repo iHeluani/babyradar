@@ -6,17 +6,17 @@ import com.babyradar.products.domain.ProductCategory;
 public class ProductMother {
 
     public static Product hippMulticereales() {
-        return new Product(
-                1L,
-                "4062300345593",
-                "Multicereales sin azúcares añadidos Hipp",
-                "Hipp",
-                ProductCategory.CEREAL,
-                true,      // bio
-                true,      // sugarFree
-                true,      // palmOilFree
-                "+6M",
-                "Procesado bueno BLW"
-        );
+        return Product.builder()
+                .id(1L)
+                .ean("4062300345593")
+                .name("Multicereales sin azúcares añadidos Hipp")
+                .brand("Hipp")
+                .category(ProductCategory.CEREAL)
+                .bio(true)
+                .sugarFree(true)
+                .palmOilFree(true)
+                .recommendedAge("+6M")
+                .notes("Procesado bueno BLW")
+                .build();
     }
 }
