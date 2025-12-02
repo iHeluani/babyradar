@@ -11,5 +11,11 @@ public interface ProductOfferRepository {
 
     List<ProductOffer> findByProductEan(String ean);
 
+    List<ProductOffer> findByShopName(String shopName);
+
+    List<ProductOffer> findByProductId(Long id);
+
     ProductOffer save(ProductOffer offer);
+
+    void deleteById(Long id);
 }

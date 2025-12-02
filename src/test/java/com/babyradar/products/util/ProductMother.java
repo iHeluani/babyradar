@@ -1,4 +1,7 @@
-package com.babyradar.products.domain;
+package com.babyradar.products.util;
+
+import com.babyradar.products.domain.Product;
+import com.babyradar.products.domain.ProductCategory;
 
 public class ProductMother {
 

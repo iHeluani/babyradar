@@ -1,5 +1,6 @@
 package com.babyradar.products.domain;
 
+import com.babyradar.products.util.ProductMother;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
